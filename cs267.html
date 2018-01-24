@@ -36,9 +36,13 @@
 
             <h3>Parallel Computing Application Example</h3>
             To be able to compare instrumental observations with a baseline sky catalog of the development of the universe, an N-body
-            simulation framework called HACC (Hardware/Hybrid Accelerated Cosmology Code) was developed. It was designed to run efficiently
-            on several high performance computing architectures and to scale to millions of cores. It uses a Particle-Mesh solver and MPI for
+            simulation framework called HACC (Hardware/Hybrid Accelerated Cosmology Code) was developed. It was designed to be extremely portable,
+            run efficiently on several high performance computing architectures and to scale to millions of cores. It uses a Particle-Mesh solver and MPI for
             long-range forces, and depending on node architecture, switches between a tree and particle-particle algorithm for short-range forces. 
+            <br>
+            HACC simulations have been run on Titan at Oak Ridge and on several Blue Gene/Q systems. Weak-scaling benchmarks on a Blue Gene/Q system show that
+            it scales without degradation to over a million cores. Strong scaling breaks down in the tens of thousands.
+            
             <br>
         </div>
     </body>
